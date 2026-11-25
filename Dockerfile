@@ -5,13 +5,13 @@ WORKDIR /app
 
 COPY . .
 
-RUN mvn -B -f BarberShop/pom.xml clean package -DskipTests
+RUN mvn -B clean package -DskipTests
 
 FROM tomcat:9.0-jdk17-temurin
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY --from=build /app/BarberShop/target/BarberShop.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build /app/target/BarberShop.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
