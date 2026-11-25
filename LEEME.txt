@@ -1,0 +1,7 @@
+BARBERSHOP (Tomcat 9, Java 17+, MySQL)
+
+1. MySQL: ejecuta sql/barbershop.sql (lee los comentarios si ya tenías tablas).
+2. Conexion.java: revisa usuario y clave de MySQL.
+3. NetBeans: File > Open Project > carpeta BarberShop. Servidor: Tomcat 9.0.x.
+4. Clean and Build > Run. Abre http://localhost:8080/BarberShop/
+5. Trabajadores: admin@barbershop.com / admin123 (o los que ya tenías).
